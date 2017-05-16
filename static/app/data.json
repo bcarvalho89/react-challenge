@@ -1,0 +1,9 @@
+{
+  "images": [{
+    "src": "https://placeimg.com/640/480/any",
+    "alt": "Image one alt text"
+  }, {
+    "src": "https://placeimg.com/640/480/any",
+    "alt": "Image two alt text"
+  }]
+}

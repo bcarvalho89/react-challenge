@@ -1,0 +1,37 @@
+// Typo
+$font--family: Helvetica Neue, sans-serif;
+$font--default-size: 14px;
+
+// Colors
+$color--text: #1a1a1a;
+$color--white: #fff;
+$color--black: #000;
+$color--link: #0078bd;
+$color--link-hover: #0069a6;
+
+// Structure
+/* Breakpoints */
+$small: 480px;
+$mobile: 600px;
+$phablet: 770px;
+$tablet: 960px;
+$large: 1024px;
+$page: 1200px;
+$big: 1600px;
+
+/* Grid */
+$grid-columns: 12;
+$gutter-width: 25px;
+$outer-margin: 0;
+$breakpoints:
+  small $small,
+  mobile $mobile,
+  phablet $phablet,
+  tablet $tablet,
+  large $large,
+  page $page,
+  big $page;
+$grid-max-width: 1200px;
+
+// Misc
+$border-radius: 3px;

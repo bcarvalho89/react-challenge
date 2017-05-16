@@ -1,0 +1,29 @@
+{% set host = "http://localhost:3000" %}
+{% set page = "" %}
+{% set assets = "/assets/" %}
+{% set title = "MATERA FrontEnd Challenge - ReactJS App" %}
+{% set description = "Lorem ipsum dolor sit amet, consectetur." %}
+{% set keywords = "lorem, ipsum, dolor" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+
+  {% include "partials/metatags.nunjucks" %}
+
+  <link rel="stylesheet" href="assets/stylesheets/app.css">
+</head>
+<body>
+
+  {% include "partials/header.nunjucks" %}
+
+  <main class="content">
+    {% block content %} {% endblock %}
+  </main>
+
+  <script src="assets/scripts/vendor.min.js"></script>
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
