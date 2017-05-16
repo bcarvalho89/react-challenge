@@ -1,7 +1,10 @@
 # ReactJS App - Challenge
 
 This is a ReactJS App challenge that I developed for [MATERA Systems](http://www.matera.com/br/) in recruitment process.
+
 It's based in [Buscapé](http://www.buscape.com.br/) product page.
+
+See the demo [here](https://bcarvalho89.github.io/react-challenge/) (Under development).
 
 ------------------------------
 
