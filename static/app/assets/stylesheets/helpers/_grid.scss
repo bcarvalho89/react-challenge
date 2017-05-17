@@ -30,7 +30,8 @@ $half-gutter-width: $gutter-width * .5;
   padding-left: $half-gutter-width;
   max-width: 100%;
 
-  @include min-screen($page) {
+  @include min-screen($page + 1) {
+    padding: 0;
     max-width: $grid-max-width;
   }
 }
@@ -60,12 +61,11 @@ $half-gutter-width: $gutter-width * .5;
 @mixin flexboxgrid-sass-col-common {
   flex-grow: 0;
   flex-shrink: 0;
-  box-sizing: border-box;
   padding-right: $half-gutter-width;
   padding-left: $half-gutter-width;
 }
 
-$name: small;
+$name: xs;
 
 .column-#{$name} {
   @include flexboxgrid-sass-col-common;

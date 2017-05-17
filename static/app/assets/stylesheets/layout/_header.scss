@@ -1,1 +1,27 @@
 /* Header */
+.header__bar {
+  box-shadow: 1px 4px 8px -2px rgba($color--black, .45);
+
+  &-top {
+    background-color: $color--primary;
+    padding: $unit-spacing 0;
+  }
+
+  &-bottom {
+    background-color: $color--primary-light;
+  }
+
+  .brand {
+    margin: 0;
+
+    &__link {
+      display: block;
+
+      img {
+        display: block;
+        max-width: 86px;
+        width: 100%;
+      }
+    }
+  }
+}

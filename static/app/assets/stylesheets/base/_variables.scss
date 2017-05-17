@@ -1,16 +1,31 @@
 // Typo
-$font--family: Helvetica Neue, sans-serif;
-$font--default-size: 14px;
+$font--family: 'Montserrat', sans-serif;
+$font--default-size: 16px;
 
 // Colors
-$color--text: #1a1a1a;
+$color--text: #757575;
+$color--title: #444;
 $color--white: #fff;
 $color--black: #000;
+$color--yellow: #ffcd00;
+$color--yellow-light: #ffdc4d;
+$color--red: #d8272d;
 $color--link: #0078bd;
 $color--link-hover: #0069a6;
+$color--green: #22b14c;
+$color--grey: #c3c3c3;
+$color--grey-light: #f2f2f2;
+
+// Theme
+$color--primary: $color--yellow;
+$color--primary-light: $color--yellow-light;
+$color--secondary: $color--red;
+$color--action: $color--green;
+$color--background: $color--grey-light;
 
 // Structure
 /* Breakpoints */
+$xs: 320px;
 $small: 480px;
 $mobile: 600px;
 $phablet: 770px;
@@ -24,6 +39,7 @@ $grid-columns: 12;
 $gutter-width: 25px;
 $outer-margin: 0;
 $breakpoints:
+  xs $small,
   small $small,
   mobile $mobile,
   phablet $phablet,
@@ -35,3 +51,5 @@ $grid-max-width: 1200px;
 
 // Misc
 $border-radius: 3px;
+$unit-spacing: 15px;
+$shadow-default: 0 2px 2px 0 rgba($color--black, .08);

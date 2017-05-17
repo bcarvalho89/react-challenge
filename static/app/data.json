@@ -1,9 +1,67 @@
 {
-  "images": [{
-    "src": "https://placeimg.com/640/480/any",
-    "alt": "Image one alt text"
-  }, {
-    "src": "https://placeimg.com/640/480/any",
-    "alt": "Image two alt text"
-  }]
+  "navigation": [
+    {
+      "title": "Celulares",
+      "url": "#"
+    },
+    {
+      "title": "TV",
+      "url": "#"
+    },
+    {
+      "title": "Eletrônicos",
+      "url": "#"
+    },
+    {
+      "title": "Informática",
+      "url": "#"
+    },
+    {
+      "title": "Eletrodomésticos",
+      "url": "#"
+    },
+    {
+      "title": "Casa e Decoração",
+      "url": "#"
+    },
+    {
+      "title": "Esporte e Lazer",
+      "url": "#"
+    },
+    {
+      "title": "Viagens",
+      "url": "#"
+    },
+    {
+      "title": "Mais Categorias",
+      "url": "#"
+    }
+  ],
+  "navigation_user": [
+    {
+      "title": "Meus favoritos",
+      "url": "#",
+      "icon": "heart"
+    },
+    {
+      "title": "Buscapé te Protege",
+      "url": "#",
+      "icon": "protege"
+    },
+    {
+      "title": "Minhas compras",
+      "url": "#",
+      "icon": "bag"
+    },
+    {
+      "title": "Meu Perfil",
+      "url": "#",
+      "icon": "account"
+    },
+    {
+      "title": "Sair",
+      "url": "#",
+      "icon": "logout"
+    }
+  ]
 }

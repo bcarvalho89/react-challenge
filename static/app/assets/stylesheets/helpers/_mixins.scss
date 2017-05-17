@@ -1,3 +1,20 @@
+@mixin btn-reset() {
+  line-height: 1;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: none;
+  font-family: inherit;
+  font-weight: normal;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 //  Author: Rafal Bromirski
 //  www: http://rafalbromirski.com/
 //  github: http://github.com/paranoida/sass-mediaqueries

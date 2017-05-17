@@ -1,0 +1,19 @@
+/* Form */
+.form {
+
+  &__field {
+
+    &-input {
+      width: 100%;
+      display: block;
+      border: none;
+      padding: 0 $unit-spacing;
+      background-color: transparent;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      height: 48px;
+      line-height: 48px;
+      font-weight: 400;
+    }
+  }
+}

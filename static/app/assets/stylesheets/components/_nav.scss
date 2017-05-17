@@ -1,0 +1,131 @@
+/* Nav */
+.nav {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      font-size: 12px;
+      font-weight: 400;
+      color: $color--title;
+      text-transform: uppercase;
+      padding: 8px 0;
+      display: block;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: 50%;
+        background-color: $color--secondary;
+        position: absolute;
+        transition: .2s ease;
+      }
+
+      &:hover {
+        color: $color--title;
+
+        &::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &-user {
+    text-align: right;
+
+    .avatar {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+
+      &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+      }
+
+      &__protege {
+        width: 15px;
+        height: 17px;
+        position: absolute;
+        bottom: -4px;
+        right: -6px;
+        z-index: 1;
+        background: url(../images/icons/icon-protege.svg) no-repeat left center transparent;
+      }
+
+      &:hover {
+        .nav-user__popover {
+          top: 50px;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__popover {
+      background-color: $color--white;
+      border-radius: $border-radius;
+      box-shadow: 0 2px 3px 0 rgba($color--black, .12);
+      list-style: none;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      width: 216px;
+      visibility: hidden;
+      opacity: 0;
+      transition: .2s ease-out;
+      z-index: 2;
+      font-weight: 500;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: -20px;
+        border-bottom: 10px solid $color--white;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        margin-right: 10px;
+        right: 3%;
+        padding: 10px 0 0;
+        vertical-align: middle;
+        height: 0;
+        width: 0;
+      }
+
+      &-list {
+        padding: 0;
+        margin: 17px 0;
+        width: 100%;
+      }
+
+      &-item {
+        width: 100%;
+        display: block;
+      }
+
+      &-icon {
+        margin: 0 10px;
+      }
+
+      &-link {
+        display: block;
+        color: $color--text;
+        text-align: left;
+        padding: 5px;
+        width: 100%;
+
+        &:hover {
+          color: $color--text;
+          background-color: $color--background;
+        }
+      }
+    }
+  }
+}

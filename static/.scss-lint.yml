@@ -115,6 +115,9 @@ linters:
     enabled: true
     max_depth: 3
 
+  selectorFormat:
+    convention: strict_BEM
+
   # Prefer the shortest shorthand form possible for properties that support it.
   Shorthand:
     enabled: true
