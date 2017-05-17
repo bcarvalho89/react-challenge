@@ -1,0 +1,35 @@
+/* Breadcrumbs */
+.breadcrumbs {
+  border-bottom: 2px solid rgba($color--grey, .7);
+  padding: $unit-spacing 0;
+  font-size: 12px;
+  font-weight: 400;
+
+  &-list {
+    @extend .container;
+    padding: 0 $unit-spacing;
+
+    &__item {
+      display: inline-block;
+
+      &::after {
+        content: "\00bb";
+        display: inline-block;
+        margin: 0 5px;
+      color: $color--title;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+
+    &__link {
+      color: $color--title;
+
+      &:hover {
+        color: $color--title;
+      }
+    }
+  }
+}
