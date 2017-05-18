@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
 import ProductDetail from './components/ProductDetail';
+import RelatedProducts from './components/RelatedProducts';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
     const mainNavigation = this.props.customData.navigation;
     const userNavigation = this.props.customData.navigation_user;
     const productDetail = this.props.customData.product_detail;
+    const relatedProducts = this.props.customData.related_products;
 
     return (
       <div>
@@ -17,6 +19,7 @@ class App extends Component {
       <main>
       <div className="page-content">
       <ProductDetail productDetail={productDetail} />
+      <RelatedProducts relatedProducts={relatedProducts} />
       </div>
       </main>
       </div>

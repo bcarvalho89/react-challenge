@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import ProductPrice from './Product/ProductPrice';
 import ProductRating from './Product/ProductRating';
 import ProductGallery from './Product/ProductGallery';
-import RelatedProducts from './RelatedProducts';
 
 class ProductDetail extends Component {
   render() {
     const productDetailData = this.props.productDetail;
 
     return (
-      <div>
       <div className="product">
       <div className="container">
       <div className="row">
@@ -28,8 +26,6 @@ class ProductDetail extends Component {
       </div>
       </div>
       </div>
-      </div>
-      <RelatedProducts />
       </div>
       );
     }
