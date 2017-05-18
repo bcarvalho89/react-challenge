@@ -14,7 +14,7 @@ class ProductDetail extends Component {
       <div className="container">
       <div className="row">
       <div className="column-mobile-3">
-      <ProductGallery />
+      <ProductGallery items={productDetailData.gallery} />
       </div>
       <div className="column-mobile-6">
       <div className="product-info">

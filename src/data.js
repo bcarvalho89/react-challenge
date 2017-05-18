@@ -75,7 +75,14 @@ var DATA = {
     "rating": {
       "stars": "4.5",
       "reviews_count": "399"
-    }
+    },
+    "gallery": [
+      "images/product1.jpg",
+      "images/product1.jpg",
+      "images/product1.jpg",
+      "images/product1.jpg",
+      "images/product1.jpg"
+    ]
   }
 };
 
