@@ -92,15 +92,15 @@
     display: inline-block;
 
     &--full {
-      background-image: url("../images/icons/icon-star_full.svg");
+      background-image: url("../public/images/icons/icon-star_full.svg");
     }
 
     &--half {
-      background-image: url("../images/icons/icon-star_half.svg");
+      background-image: url("../public/images/icons/icon-star_half.svg");
     }
 
     &--empty {
-      background-image: url("../images/icons/icon-star_full.svg");
+      background-image: url("../public/images/icons/icon-star_full.svg");
     }
   }
 }

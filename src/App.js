@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Breadcrumbs from './components/Breadcrumbs';
+import ProductInfo from './components/ProductInfo';
 import './App.css';
 
 class App extends Component {
   render() {
+    const mainNavigation = this.props.customData.navigation;
+    const userNavigation = this.props.customData.navigation_user;
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+      <Header mainNavigation={mainNavigation} userNavigation={userNavigation} />
+      <Breadcrumbs />
+      <main>
+      <div className="page-content">
+      <ProductInfo />
       </div>
-    );
+      </main>
+      </div>
+      );
   }
 }
 
