@@ -20,8 +20,12 @@
   {% include "partials/header.nunjucks" %}
   {% include "partials/breadcrumbs.nunjucks" %}
 
-  <main class="content">
-    {% block content %} {% endblock %}
+  <main>
+    <div class="page-content">
+      {% block content %} {% endblock %}
+
+      {% include "partials/related.nunjucks" %}
+    </div>
   </main>
 
   <script src="assets/scripts/vendor.min.js"></script>

@@ -1,6 +1,180 @@
 /* Card */
 .card {
-  background-color: $color--white;
+  font-size: 13px;
+  background: $color--white;
+  box-shadow: 0 2px 5px 0 rgba($color--black, .08);
   border-radius: $border-radius;
-  box-shadow: 0 2px 4px rgba($color--black, .1);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+  }
+}
+
+.product-card {
+  cursor: pointer;
+
+  &__link-block {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__link {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .inner {
+    padding: $unit-spacing $unit-spacing $gutter-width;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__favorite {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 2;
+
+    &-heart {
+      width: 20px;
+      height: 20px;
+      z-index: 5;
+      stroke: $color--yellow-dark;
+      fill: $color--white;
+      transition: .2s ease-in-out;
+
+      &.is-favorited {
+        fill: $color--yellow-dark;
+      }
+    }
+  }
+
+  &__image {
+    text-align: center;
+    margin: 4px auto 18px;
+    position: relative;
+    margin-top: 8px;
+    width: 100%;
+    height: 140px;
+    max-width: 140px;
+  }
+
+  &__name {
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    width: 90%;
+    margin-bottom: $unit-spacing * 2;
+    height: 50px;
+    max-height: 50px;
+
+    a {
+      color: $color--text;
+    }
+  }
+
+  &__viewmore {
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: $color--link;
+  }
+
+  &__price {
+
+    &-container {
+      background-color: $color--background-body;
+      height: 100px;
+      padding: $unit-spacing;
+      width: 100%;
+      border-top: 2px solid $color--grey-light;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-wrapper {
+      width: calc(100% - 40px);
+    }
+  }
+
+  &-price {
+
+    &__best-price {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      color: $color--text;
+    }
+
+    a {
+      height: 38px;
+    }
+
+    &__payment {
+      position: relative;
+      color: $color--green;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &__total{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.35;
+      text-transform: uppercase;
+      color: $color--green;
+      display: block;
+    }
+  }
+
+  &__store {
+    margin-top: $unit-spacing / 2;
+    font-size: 12px;
+    font-weight: 500;
+
+    &-link {
+      display: block;
+    }
+  }
+
+  &__action {
+    width: 30px;
+    margin-left: 10px;
+    display: block;
+
+    &-button {
+      width: 100%;
+      display: block;
+      text-align: center;
+      height: 36px;
+      line-height: 36px;
+      text-transform: uppercase;
+      background-color: $color--green;
+      color: $color--white;
+      padding: 30px 5px;
+      font-size: 24px;
+
+      i {
+        position: absolute;
+        top: 20px;
+        left: 3px;
+      }
+    }
+  }
 }

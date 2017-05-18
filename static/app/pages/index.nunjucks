@@ -1,6 +1,45 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-
+<div class="product">
+  <div class="container">
+    <div class="row">
+      <div class="column-mobile-3">
+        <div class="product-gallery">
+          GalleryGalleryGallery Gallery GalleryGalleryGallery
+        </div>
+      </div>
+      <div class="column-mobile-6">
+        <div class="product-info">
+          <header class="product__header">
+            <h1 class="product__title">Smart TV Samsung Série 4 UN32J4300AG 32 polegadas LED Plana</h1>
+            <span class="product__more"><span class="product__more-plus">+</span> info</span>
+          </header>
+          <div class="product__offers">
+            <div class="product__price product-info__block">
+              <p>A partir de: <span class="product__price-price">R$ <span class="product__price-featured">1.139</span>,90</span></p>
+            </div>
+            <div class="product__history product-info__block">
+              <a href="#"><i class="product__history-icon icon--graph"></i>Veja o histórico de preços de até 1 ano</a>
+            </div>
+          </div>
+          <div class="product__rating">
+            <div class="product__stars product-info__block">
+              <span class="star star--full"></span>
+              <span class="star star--full"></span>
+              <span class="star star--full"></span>
+              <span class="star star--full"></span>
+              <span class="star star--half"></span>
+              <a href="#" class="product__rating-count">399 consumidores avaliaram</a>
+            </div>
+            <div class="product__review product-info__block">
+              <a href="#">Enviar avaliação</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
 
