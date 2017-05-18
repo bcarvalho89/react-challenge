@@ -2756,4 +2756,4 @@ $flexboxgrid-max-width: 1180px !default;
   .product .star--half {
     background-image: url("../public/images/icons/icon-star_half.svg"); }
   .product .star--empty {
-    background-image: url("../public/images/icons/icon-star_full.svg"); }
+    background-image: url("../public/images/icons/icon-star_empty.svg"); }

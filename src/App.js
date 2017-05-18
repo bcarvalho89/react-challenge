@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
-import ProductInfo from './components/ProductInfo';
+import ProductDetail from './components/ProductDetail';
 import './App.css';
 
 class App extends Component {
   render() {
     const mainNavigation = this.props.customData.navigation;
     const userNavigation = this.props.customData.navigation_user;
+    const productDetail = this.props.customData.product_detail;
 
     return (
       <div>
@@ -15,7 +16,7 @@ class App extends Component {
       <Breadcrumbs />
       <main>
       <div className="page-content">
-      <ProductInfo />
+      <ProductDetail productDetail={productDetail} />
       </div>
       </main>
       </div>

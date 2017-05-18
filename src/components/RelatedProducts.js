@@ -16,7 +16,7 @@ class RelatedProducts extends Component {
       <div className="inner">
       <div className="product-card__favorite">
       <a href="#" title="Adicionar aos favoritos">
-      <svg xmlns="http://www.w3.org/2000/svg" className="product-card__favorite-heart" height="20" width="20" viewBox="0 0 21 20"><path fill-rule="evenodd" stroke-width="2" d="M6.14 1C3.336 1 1.053 3.46 1.032 6.492c-.04.473-.13 3.225 2.993 5.734 2.936 2.36 5.674 5.26 5.7 5.29l.673.713.67-.715c.03-.03 2.763-2.93 5.7-5.29 3.122-2.508 3.033-5.26 2.99-5.733C19.74 3.46 17.456 1 14.652 1c-1.763 0-3.324.956-4.254 2.41C9.466 1.957 7.906 1 6.14 1"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" className="product-card__favorite-heart" height="20" width="20" viewBox="0 0 21 20"><path fillRule="evenodd" strokeWidth="2" d="M6.14 1C3.336 1 1.053 3.46 1.032 6.492c-.04.473-.13 3.225 2.993 5.734 2.936 2.36 5.674 5.26 5.7 5.29l.673.713.67-.715c.03-.03 2.763-2.93 5.7-5.29 3.122-2.508 3.033-5.26 2.99-5.733C19.74 3.46 17.456 1 14.652 1c-1.763 0-3.324.956-4.254 2.41C9.466 1.957 7.906 1 6.14 1"></path></svg>
       </a>
       </div>
       <div className="product-card__image">
