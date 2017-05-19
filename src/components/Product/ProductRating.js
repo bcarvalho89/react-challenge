@@ -25,13 +25,13 @@ class ProductRating extends Component {
 
     return(
       <div className="product__rating">
-      <div className="product__stars product-info__block">
-      {starsList}
-      <a href="#" className="product__rating-count">{rating.reviews_count} consumidores avaliaram</a>
-      </div>
-      <div className="product__review product-info__block">
-      <a href="#">Enviar avaliação</a>
-      </div>
+        <div className="product__stars product-info__block">
+          {starsList}
+          <a href="#" className="product__rating-count">{rating.reviews_count} consumidores avaliaram</a>
+        </div>
+        <div className="product__review product-info__block">
+          <a href="#">Enviar avaliação</a>
+        </div>
       </div>
       );
     }

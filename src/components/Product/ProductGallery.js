@@ -22,9 +22,9 @@ class ProductGallery extends Component {
 
     return (
       <div className="product-gallery">
-      <Slick {...settings}>
-      {items}
-      </Slick>
+        <Slick {...settings}>
+          {items}
+        </Slick>
       </div>
       );
   }

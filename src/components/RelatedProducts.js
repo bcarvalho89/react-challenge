@@ -36,12 +36,12 @@ class RelatedProducts extends Component {
 
     return (
       <div className="related">
-      <div className="container">
-      <div className="row">
-      {items}
-      </div>
-      </div>
-      {this.state.isActive && <Notify message={this.state.notifyMessage} /> }
+        <div className="container">
+          <div className="row">
+            {items}
+          </div>
+         </div>
+        {this.state.isActive && <Notify message={this.state.notifyMessage} /> }
       </div>
       );
     }

@@ -15,14 +15,14 @@ class App extends Component {
 
     return (
       <div>
-      <Header mainNavigation={mainNavigation} userNavigation={userNavigation} />
-      <Breadcrumbs />
-      <main>
-      <div className="page-content">
-      <ProductDetail productDetail={productDetail} />
-      <RelatedProducts relatedProducts={relatedProducts} />
-      </div>
-      </main>
+        <Header mainNavigation={mainNavigation} userNavigation={userNavigation} />
+        <Breadcrumbs />
+          <main>
+            <div className="page-content">
+              <ProductDetail productDetail={productDetail} />
+              <RelatedProducts relatedProducts={relatedProducts} />
+            </div>
+          </main>
       </div>
       );
   }
