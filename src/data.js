@@ -100,7 +100,7 @@ var DATA = {
      {
       "name": "Mixer Philips Walita 3 em 1: Mixer, Miniprocessador e Batedor de Claras - 400W de Potência, Função Turbo",
       "link": "#",
-      "image": "images/product1.jpg",
+      "image": "images/product2.jpg",
       "price": {
         "currency": "R$",
         "price_installment": "3x",
@@ -112,7 +112,7 @@ var DATA = {
       {
       "name": "Smart TV LED 49' Samsung 49K5300 Full HD com Conversor Digital Integrado Wi - Fi 2 HDMI 1 USB com",
       "link": "#",
-      "image": "images/product1.jpg",
+      "image": "images/product3.jpg",
       "price": {
         "currency": "R$",
         "price_installment": "8x",
@@ -124,7 +124,7 @@ var DATA = {
       {
       "name": "Smartphone Samsung Galaxy S7 Edge G935F, Octa Core 2.3Ghz, Android 6.0, Tela Super Amoled 5.5', 32GB, 12MP",
       "link": "#",
-      "image": "images/product1.jpg",
+      "image": "images/product4.jpg",
       "price": {
         "currency": "R$",
         "price_installment": "10x",
