@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Breadcrumbs from './components/Breadcrumbs';
 import ProductDetail from './components/ProductDetail';
 import RelatedProducts from './components/RelatedProducts';
+
 import './App.css';
 
 class App extends Component {

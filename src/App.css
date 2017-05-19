@@ -2804,6 +2804,18 @@ $flexboxgrid-max-width: 1180px !default;
     background-color: #ffcd00; }
 
 /* Notification */
+.notify {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: #22b14c;
+  z-index: 10;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 400; }
+
 /* Header */
 .header__bar {
   box-shadow: 1px 4px 8px -2px rgba(0, 0, 0, 0.45); }

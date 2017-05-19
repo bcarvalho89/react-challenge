@@ -1,0 +1,13 @@
+/* Notification */
+.notify {
+  position: fixed;
+  right: $unit-spacing;
+  bottom: $unit-spacing;
+  background-color: $color--green;
+  z-index: 10;
+  color: $color--white;
+  padding: $unit-spacing $unit-spacing * 2;
+  font-size: 12px;
+  border-radius: $border-radius;
+  font-weight: 400;
+}

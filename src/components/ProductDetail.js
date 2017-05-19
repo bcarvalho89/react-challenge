@@ -4,11 +4,13 @@ import ProductRating from './Product/ProductRating';
 import ProductGallery from './Product/ProductGallery';
 
 class ProductDetail extends Component {
+
   render() {
     const productDetailData = this.props.productDetail;
 
     return (
       <div className="product">
+
       <div className="container">
       <div className="row">
       <div className="column-mobile-3">

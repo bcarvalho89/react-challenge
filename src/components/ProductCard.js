@@ -1,6 +1,29 @@
 import React, { Component } from 'react';
 
 class ProductCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isFavorited: false
+    };
+
+    this.toggleFavorite = this.toggleFavorite.bind(this);
+  }
+
+  toggleFavorite() {
+    let message = '';
+    if (this.state.isFavorited) {
+      message = 'Removido com sucesso';
+    } else {
+      message = 'Adicionado com sucesso';
+    }
+    this.props.onUpdate(true, message);
+    this.setState({
+      isFavorited: !this.state.isFavorited
+    });
+  }
+
+
   render() {
     const product = this.props.productInfo;
 
@@ -9,9 +32,9 @@ class ProductCard extends Component {
       <a href={product.link} title={product.name} className="product-card__link-block"></a>
       <div className="inner">
       <div className="product-card__favorite">
-      <a href="#" title="Adicionar aos favoritos">
-      <svg xmlns="http://www.w3.org/2000/svg" className="product-card__favorite-heart" height="20" width="20" viewBox="0 0 21 20"><path fillRule="evenodd" strokeWidth="2" d="M6.14 1C3.336 1 1.053 3.46 1.032 6.492c-.04.473-.13 3.225 2.993 5.734 2.936 2.36 5.674 5.26 5.7 5.29l.673.713.67-.715c.03-.03 2.763-2.93 5.7-5.29 3.122-2.508 3.033-5.26 2.99-5.733C19.74 3.46 17.456 1 14.652 1c-1.763 0-3.324.956-4.254 2.41C9.466 1.957 7.906 1 6.14 1"></path></svg>
-      </a>
+      <span onClick={this.toggleFavorite} title={this.state.isFavorited ? 'Remover dos Favoritos' : 'Adicionar aos favoritos'}>
+      <svg className={this.state.isFavorited ? 'product-card__favorite-heart is-favorited' : 'product-card__favorite-heart'} height="20" width="20" viewBox="0 0 21 20"><path fillRule="evenodd" strokeWidth="2" d="M6.14 1C3.336 1 1.053 3.46 1.032 6.492c-.04.473-.13 3.225 2.993 5.734 2.936 2.36 5.674 5.26 5.7 5.29l.673.713.67-.715c.03-.03 2.763-2.93 5.7-5.29 3.122-2.508 3.033-5.26 2.99-5.733C19.74 3.46 17.456 1 14.652 1c-1.763 0-3.324.956-4.254 2.41C9.466 1.957 7.906 1 6.14 1"></path></svg>
+      </span>
       </div>
       <div className="product-card__image">
       <a href={product.link} className="product-card__link">
@@ -50,7 +73,7 @@ class ProductCard extends Component {
       </div>
       </div>
       );
-}
-}
+    }
+  }
 
-export default ProductCard;
+  export default ProductCard;
